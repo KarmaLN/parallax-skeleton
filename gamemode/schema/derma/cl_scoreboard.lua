@@ -29,7 +29,7 @@ function PANEL:Init()
         "Name",
         "Class",
         "Rank",
-        "Unit"
+        --"Unit"
     }
 
     for _, name in ipairs(columns) do
@@ -107,7 +107,7 @@ function PANEL:RefreshPlayers()
             name,
             char:GetClassName(),
             char:GetRankName(),
-            char:GetUnitName()
+            --char:GetUnitName()
         )
 
         line.player = ply
@@ -143,7 +143,7 @@ function PANEL:RefreshPlayers()
         end
         
         line.Columns[1]:SetTextColor(factionColor)
-        line.Columns[5]:SetTextColor(char:GetUnitColor() or color_white)
+        --line.Columns[5]:SetTextColor(char:GetUnitColor() or color_white)
     end
 
     -- Context menu
