@@ -106,8 +106,7 @@ function PANEL:RefreshPlayers()
             factionName,
             name,
             char:GetClassName(),
-            char:GetRankName(),
-            --char:GetUnitName()
+            char:GetRankName()
         )
 
         line.player = ply
